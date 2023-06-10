@@ -1,0 +1,56 @@
+name: post_test
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.3 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_native_splash: ^2.2.18
+  carousel_slider: ^4.2.1
+
+
+flutter_native_splash:
+  background_image: "assets/splash.png"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/raw/casual/
+    - assets/raw/offline/
+    - assets/raw/top_rated/
+
+  fonts:
+    - family: Arial-Rounded
+      fonts:
+        - asset: assets/fonts/ARLRDBD.TTF
+    - family: Calibri
+      fonts:
+        - asset: assets/fonts/calibri.ttf
+        - asset: assets/fonts/calibrib.ttf
+          weight: 700
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
